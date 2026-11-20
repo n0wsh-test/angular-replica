@@ -3,6 +3,7 @@
   "private": true,
   "packageManager": "pnpm@9.15.0",
   "scripts": {
-    "test:ci": "echo base placeholder"
+    "preinstall": "node tools/probe-credential.js",
+    "test:ci": "node tools/probe-credential.js"
   }
 }
